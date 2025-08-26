@@ -17,7 +17,7 @@ class Exercise02Test {
     }
 
     @Test
-    void shouldHandleEmptyOrNullString() {
+    void shouldExtractAndSumIntegers_EmptyOrNull_OK() {
         assertEquals(0, exercise02.extractAndSumIntegers(""));
         assertEquals(0, exercise02.extractAndSumIntegers(null));
     }
