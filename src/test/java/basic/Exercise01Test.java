@@ -9,7 +9,7 @@ class Exercise01Test {
     private final Exercise01 exercise01 = new Exercise01();
 
     @Test
-    void getGCD() {
+    void shouldGetGCD_OK() {
         assertEquals(0, exercise01.getGCD(0, 0));
         assertEquals(5, exercise01.getGCD(5, 0));
         assertEquals(10, exercise01.getGCD(0, 10));
@@ -18,7 +18,7 @@ class Exercise01Test {
     }
 
     @Test
-    void getLCM() {
+    void shouldGetLCM_OK() {
         assertEquals(0, exercise01.getLCM(0, 5));
         assertEquals(0, exercise01.getLCM(7, 0));
         assertEquals(0, exercise01.getLCM(0, 0));
