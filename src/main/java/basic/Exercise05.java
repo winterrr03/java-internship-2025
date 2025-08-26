@@ -1,0 +1,13 @@
+package basic;
+
+public class Exercise05 {
+    public long calculateFactorial(final long n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("n must be >= 0");
+        }
+        
+        if (n == 0 || n == 1) return 1;
+
+        return n * calculateFactorial(n - 1);
+    }
+}
