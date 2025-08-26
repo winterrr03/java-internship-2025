@@ -2,7 +2,7 @@ package basic;
 
 public class Exercise03 {
     public String factorizePrime(int n) {
-        StringBuilder result = new StringBuilder();
+        final StringBuilder result = new StringBuilder();
 
         for (int i = 2; i * i <= n; i++) {
             while (n % i == 0) {

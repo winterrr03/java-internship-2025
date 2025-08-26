@@ -9,7 +9,7 @@ class Exercise03Test {
     private final Exercise03 exercise03 = new Exercise03();
 
     @Test
-    void factorizePrime() {
+    void shouldFactorizePrime_OK() {
         assertEquals("97", exercise03.factorizePrime(97));
         assertEquals("2 * 2 * 3", exercise03.factorizePrime(12));
         assertEquals("2 * 2 * 5 * 5", exercise03.factorizePrime(100));
