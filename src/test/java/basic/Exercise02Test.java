@@ -9,7 +9,7 @@ class Exercise02Test {
     private final Exercise02 exercise02 = new Exercise02();
 
     @Test
-    void sumOfDigits() {
+    void shouldSumOfDigits_OK() {
         assertEquals(5, exercise02.getSumOfDigits(5));
         assertEquals(9, exercise02.getSumOfDigits(9));
         assertEquals(0, exercise02.getSumOfDigits(0));
