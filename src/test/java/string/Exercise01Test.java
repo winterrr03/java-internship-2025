@@ -8,7 +8,7 @@ class Exercise01Test {
     private final Exercise01 exercise01 = new Exercise01();
 
     @Test
-    void shouldReturnTrue_WhenStringIsPalindrome() {
+    void shouldReturnTrue_WhenStringIsPalindrome_OK() {
         assertTrue(exercise01.isPalindrome(""));
         assertTrue(exercise01.isPalindrome("abcdcba"));
         assertTrue(exercise01.isPalindrome("a"));
@@ -17,13 +17,13 @@ class Exercise01Test {
     }
 
     @Test
-    void shouldReturnFalse_WhenStringIsNotPalindrome() {
+    void shouldReturnFalse_WhenStringIsNotPalindrome_OK() {
         assertFalse(exercise01.isPalindrome("hello"));
         assertFalse(exercise01.isPalindrome("java"));
     }
 
     @Test
-    void shouldReturnFalse_WhenInputIsNull() {
+    void shouldReturnFalse_WhenInputIsNull_OK() {
         assertFalse(exercise01.isPalindrome(null));
     }
 }
