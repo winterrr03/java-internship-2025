@@ -15,4 +15,10 @@ class Exercise05Test {
         assertEquals(5040, exercise05.calculateFactorial(7));
         assertEquals(479001600, exercise05.calculateFactorial(12));
     }
+
+    @Test
+    void shouldThrowExceptionForNegativeInput() {
+        assertThrows(IllegalArgumentException.class, () -> exercise05.calculateFactorial(-1));
+        assertThrows(IllegalArgumentException.class, () -> exercise05.calculateFactorial(-5));
+    }
 }
