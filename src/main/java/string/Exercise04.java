@@ -13,13 +13,14 @@ public class Exercise04 {
         for (int i = 1; i < len; i++) {
             if (text.charAt(i - 1) == text.charAt(i)) {
                 count++;
-            } else {
-                result.append(text.charAt(i - 1));
-                if (count > 1) {
-                    result.append(count);
-                }
-                count = 1;
+                continue;
             }
+
+            result.append(text.charAt(i - 1));
+            if (count > 1) {
+                result.append(count);
+            }
+            count = 1;
         }
 
         result.append(text.charAt(len - 1));
