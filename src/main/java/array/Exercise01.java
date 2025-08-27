@@ -1,7 +1,7 @@
 package array;
 
 public class Exercise01 {
-    public int sumEvenSubtractOdd(int[] numbers) {
+    public int sumEvenSubtractOdd(final int[] numbers) {
         if (numbers == null || numbers.length == 0) {
             return 0;
         }
