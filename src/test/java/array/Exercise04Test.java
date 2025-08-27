@@ -25,6 +25,11 @@ class Exercise04Test {
         );
 
         assertArrayEquals(
+                new int[]{1, 2, 3, 4, 5, 6},
+                exercise04.mergeSortedArrays(new int[]{1, 3, 6}, new int[]{2, 4, 5})
+        );
+
+        assertArrayEquals(
                 new int[]{1, 2},
                 exercise04.mergeSortedArrays(new int[]{1}, new int[]{2})
         );
