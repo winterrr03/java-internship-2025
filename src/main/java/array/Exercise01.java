@@ -9,12 +9,7 @@ public class Exercise01 {
         int result = 0;
 
         for (int n : numbers) {
-            if (n % 2 == 0) {
-                result += n;
-                continue;
-            }
-
-            result -= n;
+            result += (1 - 2 * (n % 2)) * n;
         }
 
         return result;
