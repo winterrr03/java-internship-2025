@@ -9,8 +9,8 @@ class Exercise02Test {
 
     @Test
     void shouldBinarySearch_OK() {
-        int[] arr = {-10, -5, 0, 5, 10};
-        
+        final int[] arr = {-10, -5, 0, 5, 10};
+
         assertEquals(0, exercise02.binarySearch(arr, -10));
         assertEquals(2, exercise02.binarySearch(arr, 0));
         assertEquals(4, exercise02.binarySearch(arr, 10));

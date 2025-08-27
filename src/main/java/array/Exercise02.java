@@ -1,7 +1,7 @@
 package array;
 
 public class Exercise02 {
-    public int binarySearch(int[] arr, int target) {
+    public int binarySearch(final int[] arr, final int target) {
         if (arr == null || arr.length == 0) {
             return -1;
         }
