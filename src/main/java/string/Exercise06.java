@@ -17,7 +17,7 @@ public class Exercise06 {
 
             int digit = ch - '0';
 
-            if ((i + 1) % 2 == 1) {
+            if (i % 2 == 0) {
                 sumOdd += digit;
                 continue;
             }
