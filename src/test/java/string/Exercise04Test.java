@@ -11,6 +11,7 @@ class Exercise04Test {
     void shouldCompressStringWithRepeatedCharacters_OK() {
         assertEquals("abc4e6fd", exercise04.compressString("abcccceeeeeefd"));
         assertEquals("ab13c", exercise04.compressString("abbbbbbbbbbbbbc"));
+        assertEquals("a10", exercise04.compressString("aaaaaaaaaa"));
     }
 
     @Test
