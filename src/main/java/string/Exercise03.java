@@ -1,25 +1,38 @@
 package string;
 
 public class Exercise03 {
+    private boolean isRepeatedPattern(final String str, final int subLength, final int strLength) {
+        final int repeatCount = strLength / subLength;
+
+        if (repeatCount == 1) return false;
+
+        for (int i = 0; i < subLength; i++) {
+            for (int j = 1; j < repeatCount; j++) {
+                if (str.charAt(i) != str.charAt(j * subLength + i)) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
     public boolean isRepeatedSubstring(final String str) {
         if (str == null || str.length() <= 1) {
             return false;
         }
 
-        final int n = str.length();
-        final int[] lps = new int[n];
-        int len = 0;
+        final int strLength = str.length();
 
-        for (int i = 1; i < n; i++) {
-            while (len > 0 && str.charAt(i) != str.charAt(len)) {
-                len = lps[len - 1];
-            }
-            if (str.charAt(i) == str.charAt(len)) {
-                len++;
-                lps[i] = len;
+        for (int subLength = 1; subLength * subLength <= strLength; subLength++) {
+            if (strLength % subLength == 0) {
+                if (isRepeatedPattern(str, subLength, strLength) ||
+                        isRepeatedPattern(str, strLength / subLength, strLength)) {
+                    return true;
+                }
             }
         }
 
-        return len > 0 && n % (n - len) == 0;
+        return false;
     }
 }
