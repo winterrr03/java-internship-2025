@@ -15,7 +15,7 @@ class Exercise07Test {
     }
 
     @Test
-    void shouldThrowException_WhenNegativeInput() {
+    void shouldReverseBinary_Throws() {
         assertThrows(IllegalArgumentException.class, () -> exercise07.reverseBinary(-23));
         assertThrows(IllegalArgumentException.class, () -> exercise07.reverseBinary(-1));
     }

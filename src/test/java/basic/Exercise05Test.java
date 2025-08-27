@@ -17,7 +17,7 @@ class Exercise05Test {
     }
 
     @Test
-    void shouldThrowExceptionForNegativeInput() {
+    void shouldCalculateFactorial_Throws() {
         assertThrows(IllegalArgumentException.class, () -> exercise05.calculateFactorial(-1));
         assertThrows(IllegalArgumentException.class, () -> exercise05.calculateFactorial(-5));
     }

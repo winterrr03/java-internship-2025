@@ -18,7 +18,7 @@ class Exercise08Test {
     }
 
     @Test
-    void shouldThrowException_WhenInvalidInput() {
+    void shouldConvertToRoman_Throws() {
         assertThrows(IllegalArgumentException.class, () -> exercise08.convertToRoman(0));
         assertThrows(IllegalArgumentException.class, () -> exercise08.convertToRoman(-5));
         assertThrows(IllegalArgumentException.class, () -> exercise08.convertToRoman(4000));
